@@ -43,7 +43,10 @@ public class TopStoriesAdapter extends RecyclerView.Adapter<TopStoriesAdapter.Ne
         TopStoriesResultsItem topStoriesResultsItem = topStoriesResultsItems.get(position);
 
         holder.dateTextView.setText(topStoriesResultsItem.getPublishedDate().substring(0, 10) + ""); // 20/01/2019
-        holder.sectionTextView.setText(topStoriesResultsItem.getSection() + " > " + topStoriesResultsItem.getSubsection());
+        if (topStoriesResultsItem.getSubsection() != null && !topStoriesResultsItem.getSubsection().isEmpty())
+            holder.sectionTextView.setText(topStoriesResultsItem.getSection() + " > " + topStoriesResultsItem.getSubsection());
+        else
+            holder.sectionTextView.setText(topStoriesResultsItem.getSection() + "");
         holder.titleTextView.setText(topStoriesResultsItem.getTitle() + "");
         if (topStoriesResultsItem.getMultimedia().size() > 0)
             GlideApp.with(context)
