@@ -16,7 +16,7 @@ public class TopStoriesResponse{
 	private String section;
 
 	@SerializedName("results")
-	private List<ResultsItem> results;
+	private List<TopStoriesResultsItem> results;
 
 	@SerializedName("num_results")
 	private int numResults;
@@ -48,11 +48,11 @@ public class TopStoriesResponse{
 		return section;
 	}
 
-	public void setResults(List<ResultsItem> results){
+	public void setResults(List<TopStoriesResultsItem> results){
 		this.results = results;
 	}
 
-	public List<ResultsItem> getResults(){
+	public List<TopStoriesResultsItem> getResults(){
 		return results;
 	}
 

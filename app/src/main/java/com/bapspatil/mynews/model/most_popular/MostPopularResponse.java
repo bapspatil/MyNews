@@ -10,7 +10,7 @@ public class MostPopularResponse{
 	private String copyright;
 
 	@SerializedName("results")
-	private List<ResultsItem> results;
+	private List<MostPopularResultsItem> results;
 
 	@SerializedName("num_results")
 	private int numResults;
@@ -26,11 +26,11 @@ public class MostPopularResponse{
 		return copyright;
 	}
 
-	public void setResults(List<ResultsItem> results){
+	public void setResults(List<MostPopularResultsItem> results){
 		this.results = results;
 	}
 
-	public List<ResultsItem> getResults(){
+	public List<MostPopularResultsItem> getResults(){
 		return results;
 	}
 

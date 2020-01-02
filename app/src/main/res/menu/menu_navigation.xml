@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    Created by Bapusaheb Patil {@link https://bapspatil.com}
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_top_stories"
+        android:title="Top Stories" />
+    <item
+        android:id="@+id/action_most_popular"
+        android:title="Most Popular" />
+    <item
+        android:id="@+id/action_business"
+        android:title="Business" />
+    <item
+        android:id="@+id/action_arts"
+        android:title="Arts" />
+    <item
+        android:id="@+id/action_politics"
+        android:title="Politics" />
+    <item
+        android:id="@+id/action_sports"
+        android:title="Sports" />
+    <item
+        android:id="@+id/action_travel"
+        android:title="Travel" />
+    <item
+        android:id="@+id/action_technology"
+        android:title="Technology" />
+</menu>
